@@ -26,8 +26,8 @@ public class Server {
                 public void run() {
                     while(true){
                         msg = sc.nextLine(); //чтение воода с клавиатуры
-                        out.println(msg);    // write data stored in msg in the clientSocket
-                        out.flush();   // forces the sending of the data
+                        out.println(msg);    // запись в сокет
+                        out.flush();
                     }
                 }
             });
